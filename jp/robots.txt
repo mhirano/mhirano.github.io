@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mhirano.github.io/jp/sitemap.xml
