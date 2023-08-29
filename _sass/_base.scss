@@ -358,7 +358,7 @@ footer.sticky-bottom {
 // CV
 
 .cv {
-  margin-bottom: 40px;
+  margin-bottom: 40px; //40
 
   .card {
     background-color: var(--global-card-bg-color);
@@ -368,6 +368,10 @@ footer.sticky-bottom {
       background-color: inherit;
       border-color: var(--global-divider-color);
 
+      .row {
+        margin-bottom: -10px;
+      }
+      
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;

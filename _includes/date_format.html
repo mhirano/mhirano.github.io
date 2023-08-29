@@ -1,5 +1,6 @@
 {% assign months = "january|february|march|april|may|june|july|august|september|october|november|december" | split: "|" %}
 {% assign m = include.date_from.date | date: "%-m" | minus: 1 %}
+{% assign m_ = include.date_from.date | date: "%-m" %}
 {% assign day = include.date_from.date | date: "%d" %}
 {% capture month %}months.{{ include.format }}.{{ months[m] }}{% endcapture %}
 {% assign year = include.date_from.date | date: "%Y" %}
@@ -10,6 +11,8 @@ Here, add language specific date formats
 
 {% if site.lang == 'en' %}
 {% t month %} {{day}}, {{year}}
+{% elsif site.lang == 'jp' %}
+{{year}}年{{m_}}月{{day}}日
 {% elsif site.lang == 'pt-br' %}
 {{day}} de {% t month %}, {{year}}
 {% endif %}

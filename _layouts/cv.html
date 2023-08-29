@@ -11,14 +11,14 @@ layout: default
     {% if page.description %}<p class="post-description">{% t page.description %}</p>{% endif %}
   </header>
 
-  <h4>{% t cv.table_of_contents %}</h4>
+  <!-- <h4>{% t cv.table_of_contents %}</h4>
   <ul class="timeline">
   {% for entry in site.data[site.lang].cv %}
     <li><a href="#{{ entry.title }}"><span class="badge-toc">{{ entry.title }}</span></a></li>
   {% endfor %}
-  </ul>
+  </ul> -->
 
-  <article>
+  <!-- <article>
     <div class="cv">
       {% for entry in site.data[site.lang].cv %}
         <a class="anchor" id="{{ entry.title }}"></a>
@@ -42,6 +42,59 @@ layout: default
         </div>
       {% endfor %}
       </div>
+  </article> -->
+  <article>
+    <div class="cv">
+      {% for data in site.data[site.lang] %}
+        {% if site.jsonresume and site.jsonresume.size > 0 %}
+          {% unless site.jsonresume contains data[0] %}
+            {% continue %}
+          {% endunless %}
+        {% endif %}
+        {% if data[0] == "meta" or data[1].size == 0 %}
+          {% continue %}
+        {% endif %}
+        {% assign localized_title = data[0] | prepend:'cv.' %}
+        <a class="anchor" id="{{ entry.title }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{% t localized_title %}</h3>
+          <div>
+          {% case data[0] %}
+            {% when "basics" %}
+              {% include resume/basics.html %}
+            {% when "education" %}
+              {% include resume/education.html %}
+            {% when "work" %}
+              {% include resume/work.html %}
+            {% when "volunteer" %}
+              {% include resume/volunteer.html %}
+            {% when "projects" %}
+              {% include resume/projects.html %}
+            {% when "awards" %}
+              {% include resume/awards.html %}
+            {% when "skills" %}
+              {% include resume/skills.html %}
+            {% when "publications" %}
+              {% include resume/publications.html %}
+            {% when "languages" %}
+              {% include resume/languages.html %}
+            {% when "interests" %}
+              {% include resume/interests.html %}
+            {% when "certificates" %}
+              {% include resume/certificates.html %}
+            {% when "fundings" %}
+              {% include resume/fundings.html %}
+            {% when "patents" %}
+              {% include resume/patents.html %}
+            {% when "classes" %}
+              {% include resume/classes.html %}
+            {% else %}
+
+          {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
   </article>
 </div>
 
@@ -53,7 +106,7 @@ layout: default
     {% if page.description %}<p class="post-description">{% t page.description %}</p>{% endif %}
   </header>
 
-  <h4>{% t cv.table_of_contents %}</h4>
+  <!-- <h4>{% t cv.table_of_contents %}</h4>
   <ul class="timeline">
   {% for entry in site.data[localized_resume] %}
     {% if site.jsonresume and site.jsonresume.size > 0 %}
@@ -67,7 +120,7 @@ layout: default
     {% assign localized_title = entry[0] | prepend:'cv.' %}
     <li><a href="#{% t localized_title %}"><span class="badge-toc">{% t localized_title %}</span></a></li>
   {% endfor %}
-  </ul>
+  </ul> -->
 
   <article>
     <div class="cv">
@@ -108,6 +161,12 @@ layout: default
               {% include resume/interests.html %}
             {% when "certificates" %}
               {% include resume/certificates.html %}
+            {% when "fundings" %}
+              {% include resume/fundings.html %}
+            {% when "patents" %}
+              {% include resume/patents.html %}
+            {% when "classes" %}
+              {% include resume/classes.html %}
             {% else %}
 
           {% endcase %}

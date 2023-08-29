@@ -1,77 +1,109 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Masahiro Hirano",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://george-gca.github.io/multi-language-al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "email": "mhirano_at_iis.u-tokyo.ac.jp (Work) / masahiro.dll_at_gmail.com (Personal) (Replace _at_ with @)",
+    "address": "As-514, 4-6-1 Komaba, Meguro-ku, Tokyo 153-8505, Japan",
+    "phone": "+81-3-5452-6174",
+    "fax": "+81-3-5452-6180",
+    "url_lab": "http://www.hfr.iis.u-tokyo.ac.jp/members/hirano/index-e.html"
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": [
-        "Relativity"
-      ]
+      "position": "Project member",
+      "name": "Ishikawa Group Laboratory, Tokyo University of Science",
+      "startDate": "2020-11"
+    },
+    {
+      "position": "Assistant Professor",
+      "name": "Institute of Industrial Science, The University of Tokyo",
+      "startDate": "2020-11"
+    },
+    {
+      "position": "Project Assistant Professor",
+      "name": "Data Science Research Division, Information Technology Center, The University of Tokyo",
+      "startDate": "2020-04",
+      "endDate": "2020-10"
+    },
+    {
+      "position": "Project Assistant Professor",
+      "name": "Graduate School of Creative Informatics, The University of Tokyo",
+      "startDate": "2018",
+      "endDate": "2020"
+    },
+    {
+      "position": "Research Fellow (DC1)",
+      "name": "Japan Society for the Promotion of Science",
+      "startDate": "2015",
+      "endDate": "2018"
+    },
+    {
+      "position": "Technical Assistant",
+      "name": "The University of Tokyo",
+      "startDate": "2013",
+      "endDate": "2015"
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "studyType": "Ph.D. in Information Science and Technology",
+      "institution": "Graduate School of Information Science and Technology, The University of Tokyo",
+      "startDate": "2015",
+      "endDate": "2018"
+    },
+    {
+      "studyType": "M.S. in Information Science and Technology",
+      "institution": "Graduate School of Information Science and Technology, The University of Tokyo",
+      "startDate": "2013",
+      "endDate": "2015"
+    },
+    {
+      "studyType": "B.E. in Mathematical Engineering and Information Physics",
+      "institution": "Department of Mathematical Engineering and Information Physics, Faculty of Engineering, The University of Tokyo",
+      "startDate": "2009",
+      "endDate": "2013"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Young Excellent Presentation Award",
+      "date": "2021-09",
+      "awarder": "XXIII World Congress of the Int. Measurement Confederation (IMEKO2021)"
+    },
+    {
+      "title": "IPSJ Yamashita SIG Research Award",
+      "date": "2017-03",
+      "awarder": "Information Processing Society of Japan"
     }
   ],
+  "classes": [
+    {
+      "title": "First-Year Seminar for Natural Sciences Students",
+      "startDate": "2023",
+      "institution": "The University of Tokyo"
+    },
+    {
+      "title": "Basic Lectures on Emerging Design and Informatics Ⅳ",
+      "startDate": "2021",
+      "institution": "The University of Tokyo"
+    }
+  ],
+  "fundings": [],
   "certificates": [],
   "publications": [],
   "skills": [],
+  "patents": [],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
+      "language": "Japanese",
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Proficient"
     }
   ],
   "interests": [],
-  "references": [],
-  "projects": []
+  "references": []
 }

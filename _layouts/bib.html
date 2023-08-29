@@ -48,6 +48,9 @@
               {%- assign author_is_self = true -%}
             {%- endif -%}
           {%- endif -%}
+          {%- if author.last == site.scholar.name_local -%}
+            {%- assign author_is_self = true -%}
+          {%- endif -%}
           {%- assign coauthor_url = nil -%}
           {%- if site.data.coauthors[author_last_name] -%}
             {%- for coauthor in site.data.coauthors[author_last_name] -%}
@@ -131,7 +134,12 @@
           {{ periodical | strip }}
         </div>
         <div class="periodical">
-          {{ entry.note | strip }}
+          {%- if entry.note -%}
+            * {{ entry.note | strip }}
+          {%- endif -%}
+        </div>
+        <div class="periodical">
+          <span class="title font-weight-bold" style="color: var(--global-theme-color)">{{ entry.special | strip }}</span>
         </div>
 
           <!-- Links/Buttons -->
@@ -184,6 +192,9 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.youtube and entry.youtube != '' %}
+            <a href="{{ entry.youtube }}" class="btn btn-sm z-depth-0" role="button">YouTube</a>
           {%- endif %}
           </div>
           {% if site.badges %}

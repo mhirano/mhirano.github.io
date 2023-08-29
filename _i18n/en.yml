@@ -3,16 +3,16 @@ not_found:
   main_page: home page
 main:
   address: >
-    <p>555 your office number</p>
+    <p>hoge 555 your office number</p>
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
-  contact_note: You can even add a little note about which of these is the best way to reach you.
+  contact_note: "" # You can even add a little note about which of these is the best way to reach you.
   description: A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-  footer_text: > # the ">" symbol means to ignore newlines until "titles:"
-    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> theme.
-    Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-    Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-  subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+  footer_text: "All rights reserved." # > # the ">" symbol means to ignore newlines until "titles:"
+    # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> theme.
+    # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  subtitle: "" # Assistant Professor, The University of Tokyo # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 titles:
   about: about
   blog: blog
@@ -74,9 +74,10 @@ months:
     december: Dec
 news:
   titles:
-    news1: A simple inline announcement.
-    news2: A long announcement with details
-    news3: "A simple inline announcement with Markdown emoji! :sparkles: :smile:"
+    news-2023-6-15: "" # A simple inline announcement.
+    news-2023-6-22: "" # A simple inline announcement.
+    news-2023-7-14: "" # A simple inline announcement.
+    news-2023-7-26: "" # A simple inline announcement.
 pagination:
   newer: Newer
   older: Older
@@ -104,18 +105,23 @@ repositories:
 cv:
   address: Address
   area: Area
+  author: Author
   awarder: Awarder
   awards: Awards
-  basics: General information
+  basics: Contact
   certificates: Certificates
   city: City
+  classes: Classes
   countryCode: Country code
   courses: Courses
   date: Date
   education: Education
   email: Email
   endDate: End date
+  fax: Fax
   fluency: Fluency
+  funder: Funder
+  fundings: Fundings
   highlights: Highlights
   image: Image
   institution: Institution
@@ -130,6 +136,7 @@ cv:
   name: Name
   network: Network
   organization: Organization
+  patents: Patents
   phone: Phone
   position: Position
   postalCode: Postal Code
@@ -147,8 +154,10 @@ cv:
   studyType: Study type
   summary: Summary
   table_of_contents: Table of Contents
+  teachings: Teachings
   title: Title
   url: Url
+  url_lab: Lab URL
   username: Username
   volunteer: Volunteer
   work: Work
