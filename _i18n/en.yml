@@ -90,6 +90,7 @@ news:
     news-2025-12-10: "" # A simple inline announcement.
     news-2026-1-31: "" # A simple inline announcement.
     news-2026-3-5: "" # A simple inline announcement.
+    news-2026-4-24: "" # A simple inline announcement.
 pagination:
   newer: Newer
   older: Older
